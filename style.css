@@ -1,15 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
-
+:root {
+  --primary: #141414;
+  --light: #F3F3F3;
+  --dark:   #686868;
+}
 * {
     box-sizing: border-box;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    background-color: black;
 }
 
 html, body {
     width: 100vw;
     min-height: 100vh;
+    background-color: black; 
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
@@ -22,7 +26,7 @@ html, body {
     margin: 0;
     padding: 0;
   }
-
+/* ------------------start of header -------------------*/
  header {
      z-index: 2;
      padding-left: 4%;
@@ -32,10 +36,10 @@ html, body {
     top: 0;
     display: grid;  
     grid-gap:5px;
-    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas: 
      "nt mn mn sb . . . "; 
-    background-color: black;
+    background-color: rgba(5, 5, 5, 0.027);
     width: 100%;
     margin-bottom: 0px;  
   }
@@ -49,7 +53,7 @@ html, body {
   
   #logo {
       font-size: 1.8em;
-    color: rgb(9, 229, 192);  
+    color: #09e5c0;  
     text-transform: uppercase;
     font-weight: 700;
     margin: 0; 
@@ -78,7 +82,9 @@ html, body {
     grid-area: sb;
     padding: 0 40px;
   }
-  
+  .sub-nav .icon{
+    font-size: 26px;
+  }
   .sub-nav a {
     text-decoration: none;
     margin: 10px;
@@ -86,18 +92,18 @@ html, body {
   }
   
   .sub-nav a:hover {
-    color: var(--dark);
+    color: #09e5c0;
   } 
    
   
 .search {
     background-color: transparent;
-    border: 2px solid #22254b;
-    border-radius: 50px;
+    border: 2px solid #09e5c0;
+    border-radius: 8px;
     color: #fff;
     font-family: inherit;
     font-size: 1rem;
-    padding: 0.5rem 1rem 0.5rem 40px;
+    padding: 0.5rem 3rem 0.5rem 40px;
 }
 
 .search-icon{
@@ -106,12 +112,49 @@ html, body {
 .search::placeholder {
     color: #7378c5;
 }
-
+form{
+padding-right: 20px;
+}
 .search:focus {
     background-color: #22254b;
     outline: none;
 }
 
+
+
+.hero {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*background: #333;
+  background: rgba(0, 0, 0, 0.25);*/
+  
+
+  color: white;
+  margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+  }
+  
+  .video-bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  }
+  
+  .intro {
+  text-align: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 960px;
+  }
+/* -----------------------start fo main section--------------------------- */
 main {
   padding-top: 12rem;
     display: flex;

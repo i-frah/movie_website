@@ -1,77 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Netflix-ish</title>
-        <link rel="stylesheet" href="style.css" />
-        <script src="https://kit.fontawesome.com/2fb9dd8901.js" crossorigin="anonymous"></script>
-        <script src="main.js" defer></script>
-    </head>
-    <body>
-        <header>
-            <div class="netflixLogo">
-                <a id="logo" href="#home">netflix-ish</a>
-            </div>      
-            <nav class="main-nav">                
-                <a href="#home">Home</a>
-                <a href="#series">Series</a>
-                <a href="#movies">Films</a>
-                <a href="#originals">Latest</a>
-                <a href="#">My List</a>     
-            </nav>
-         
-            <nav class="sub-nav">
-                
-                <a href="#" class="search-icon"><i class="fas fa-search sub-nav-logo"></i></a>
-                <form id="form">
-                    <input
-                        type="text"
-                        id="search"
-                        placeholder="Search"
-                        class="search"
-                    />
-                </form>
-            
-                <a target="_blank" href="#">Portfolio</a>
-                <a href="#"><i class="fas fa-gifts"></i></a>
-                <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
-                <a href="#"><i class="far fa-user-circle"></i></a>      
-            </nav>  
-        </header>
-        <main id="main"></main>
 
-        <section class="link">
-          <div class="logos">
-            <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
-            <a href="#"><i class="fab fa-instagram fa-3x logo"></i></a>
-            <a href="#"><i class="fab fa-twitter fa-3x logo"></i></a>
-            <a href="#"><i class="fab fa-youtube fa-3x logo"></i></a>
-          </div>
-            <div class="sub-links">
-              <ul>
-                <li><a href="#">Audio and Subtitles</a></li>
-                <li><a href="#">Audio Description</a></li>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Gift Cards</a></li>
-                <li><a href="#">Media Centre</a></li>
-                <li><a href="#">Investor Relations</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Term of Use</a></li>
-                <li><a href="#">Privacy</a></li>
-                <li><a href="#">Legal Notices</a></li>
-                <li><a href="#">Cookie Preferences</a></li>
-                <li><a href="#">Corporate Information</a></li>
-                <li><a href="#">Contact Us</a></li>
-              </ul>
-            </div>
-            <div class="sub-service">
-              <button class="service-code">Service Code</button>
-            </div>
-            <footer>
-              <p>&copy 1997-2018 Netflix, Inc.</p>
-              <p>Created by Ifrah Vermeer</p>
-            </footer>
-          </section>
-    </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix-ish</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/2fb9dd8901.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- logo -->
+    <div class="netflixLogo">
+      <a id="logo" href="#home">netflix-ish</a>
+    </div>
+    <!-- main navigation -->
+    <nav class="main-nav">
+      <a href="#home">Home</a>
+      <a href="#series">Series</a>
+      <a href="#movies">Films</a>
+      <a href="#originals">Latest</a>
+      <a href="#">My List</a>
+    </nav>
+
+    <!-- account details navigation -->
+    <nav class="sub-nav">
+      <a href="#" class="search-icon"><i class="fas fa-search sub-nav-logo"></i></a>
+      <form id="form">
+        <input type="text" id="search" placeholder="Titles, genres. . . " class="search" />
+      </form>
+      <a target="_blank" href="#">Portfolio</a>
+      <a href="#"><i class="icon fas fa-gifts"></i></a>
+      <a href="#"><i class="icon fas fa-bell sub-nav-logo"></i></a>
+      <a href="#"><i class="icon far fa-user-circle"></i></a>
+    </nav>
+  </header>
+  <!-- video trailer section -->
+  <div class="hero">
+    <h1>Waves flung themselves at the blue evening</h1>
+    <video class="video-bg" autoplay loop>
+        <source src="witcher-trailer.mp4" type="video/mp4">
+    </video></div>
+  <!-- movie grid section -->
+  <main id="main"></main>
+  
+
+  <!-- footer section -->
+  <section class="link">
+    <div class="logos">
+      <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-3x logo"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-3x logo"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-3x logo"></i></a>
+    </div>
+    <div class="sub-links">
+      <ul>
+        <li><a href="#">Audio and Subtitles</a></li>
+        <li><a href="#">Audio Description</a></li>
+        <li><a href="#">Help Center</a></li>
+        <li><a href="#">Gift Cards</a></li>
+        <li><a href="#">Media Centre</a></li>
+        <li><a href="#">Investor Relations</a></li>
+        <li><a href="#">Jobs</a></li>
+        <li><a href="#">Term of Use</a></li>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Legal Notices</a></li>
+        <li><a href="#">Cookie Preferences</a></li>
+        <li><a href="#">Corporate Information</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="sub-service">
+      <button class="service-code">Service Code</button>
+    </div>
+    <footer>
+      <p>&copy 1997-2018 Netflix, Inc.</p>
+      <p>Created by Ifrah Vermeer</p>
+    </footer>
+  </section>
+</body>
+
 </html>
