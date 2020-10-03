@@ -14,9 +14,10 @@
 
 html,
 body {
+  scroll-behavior: smooth;
   width: 100vw;
   min-height: 100vh;
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
@@ -25,10 +26,7 @@ body {
 }
 
 
-.wrapper {
-  margin: 0;
-  padding: 0;
-}
+
 
 /* ------------------start of header -------------------*/
 header {
@@ -37,6 +35,7 @@ header {
   font-size: 16px;
   height: 74px;
   position: fixed;
+  transition: 0.6s ease-in-out;
   top: 0;
   display: grid;
   grid-gap: 5px;
@@ -117,7 +116,7 @@ header {
 }
 
 .search::placeholder {
-  color: #7378c5;
+  color: #1b0303;
 }
 
 form {
@@ -224,31 +223,42 @@ color: #09e5c0;
 
 .sticky{
   background-color: black;
-  transition: 2s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 /* -----------------------start fo main section--------------------------- */
 main {
-  padding-top: 12rem;
+  padding-top: 2rem;
+  margin-left: 50px;
   display: flex;
   flex-wrap: wrap;
 }
 
+.main-title{
+  text-align: center;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
 .movie {
-  background-color: #373b69;
+  background: rgb(212,206,206);
+background: linear-gradient(180deg, rgba(212,206,206,0.9345939059217437) 0%, rgba(0,0,0,0.937395026369923) 63%, rgba(40,42,42,1) 100%);
   border-radius: 10px;
+  box-shadow:  -7px -7px 14px #121212, 
+  7px 7px 14px #222222;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   position: relative;
   margin: 1rem;
-  width: 230px;
+  width: 240px;
 }
 
 .movie img {
   width: 100%;
 }
 
+
 .movie-info {
-  color: #eee;
+  color: rgb(0, 0, 0);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -272,7 +282,7 @@ main {
 }
 
 .movie-info span.orange {
-  color: orange;
+  color: rgb(0, 255, 64);
 }
 
 .movie-info span.red {
@@ -280,16 +290,18 @@ main {
 }
 
 .overview {
-  background-color: #fff;
+  background: rgb(212,206,206);
+background: linear-gradient(180deg, rgba(212,206,206,0.3743698162858894) 0%, rgba(0,0,0,0.8001401244091386) 14%, rgba(0,0,0,1) 100%);
   padding: 2rem;
   position: absolute;
   max-height: 100%;
   overflow: auto;
+  color: rgb(255, 255, 255);
   left: 0;
   bottom: 0;
   right: 0;
-  transform: translateY(101%);
-  transition: transform 0.3s ease-in;
+  transform: translateY(100%);
+  transition:  transform 0.8s ease-in;
 }
 
 .overview h3 {
@@ -299,10 +311,6 @@ main {
 .movie:hover .overview {
   transform: translateY(0);
 }
-
-
-
-
 
 
 

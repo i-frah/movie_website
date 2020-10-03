@@ -30,7 +30,7 @@
     <nav class="sub-nav">
       <a href="#" class="search-icon"><i class="fas fa-search sub-nav-logo"></i></a>
       <form id="form">
-        <input type="text" id="search" placeholder="Titles, genres. . . " class="search" />
+        <input onclick="scrollWin()" type="text" id="search" placeholder="Titles, genres,people. . . " class="search" />
       </form>
       <a target="_blank" href="#">Portfolio</a>
       <a href="#"><i class="icon fas fa-gifts"></i></a>
@@ -58,15 +58,17 @@
     </div>
     <!-- <h1>Waves flung themselves at the blue evening</h1> -->
     <div class="hero-text">
-
     </div>
     <video class="video-bg" loop>
       <source src="witcher-trailer.mp4" type="video/mp4"><!-- This trailer is property of Netflix,inc. -->
     </video>
   </div>
   <!-- movie grid section -->
+  <div class="main-title">
+    <h1>Recommended Movies.</h1>
+    <p>Still unsure? Just search for a genre, actor or other criterias so we can recommended better choices!</p>
+  </div>
   <main id="main"></main>
-
 
   <!-- footer section -->
   <section class="link">
@@ -102,13 +104,5 @@
     </footer>
   </section>
 </body>
-<script>
-
-window.addEventListener('scroll', function () {
-  let header = document.querySelector('header');
-  header.classList.toggle('sticky', window.scrollY > 400);
-});
-
-</script>
 
 </html>

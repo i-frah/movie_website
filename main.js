@@ -68,12 +68,24 @@ function getClassByRate(vote) {
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
-
+    window.scrollY > 400
     const searchTerm = search.value;
 
     if (searchTerm) {
         getMovies(SEARCHAPI + searchTerm);
-
+           
         search.value = "";
+
     }
 });
+
+
+window.addEventListener('scroll', function () {
+    let header = document.querySelector('header');
+    header.classList.toggle('sticky', window.scrollY > 400);
+  });
+  
+
+  function scrollWin() {
+    window.scrollTo(0, 850);
+  }
