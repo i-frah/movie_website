@@ -22,15 +22,15 @@ html, body {
   }
 
 
-  wrapper {
+  .wrapper {
     margin: 0;
     padding: 0;
   }
 /* ------------------start of header -------------------*/
  header {
      z-index: 2;
-     padding-left: 4%;
-    font-size: 18px;
+     padding-left: 2%;
+    font-size: 16px;
     height: 74px;
     position: fixed;
     top: 0;
@@ -38,8 +38,8 @@ html, body {
     grid-gap:5px;
     grid-template-columns: 1fr 3fr 1fr;
     grid-template-areas: 
-     "nt mn mn sb . . . "; 
-    background-color: rgba(5, 5, 5, 0.027);
+     "nt mn sb . . . "; 
+    background-color: rgba(5, 5, 5, 0.116);
     width: 100%;
     margin-bottom: 0px;  
   }
@@ -52,7 +52,7 @@ html, body {
 
   
   #logo {
-      font-size: 1.8em;
+      font-size: 1.77em;
     color: #09e5c0;  
     text-transform: uppercase;
     font-weight: 700;
@@ -103,7 +103,7 @@ html, body {
     color: #fff;
     font-family: inherit;
     font-size: 1rem;
-    padding: 0.5rem 3rem 0.5rem 40px;
+    padding: 0.5rem 10px 0.5rem 40px;
 }
 
 .search-icon{
@@ -120,6 +120,9 @@ padding-right: 20px;
     outline: none;
 }
 
+
+
+/*---------------------- hero and video section----------------------------- */
 
 
 .hero {
