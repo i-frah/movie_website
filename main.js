@@ -14,9 +14,7 @@ getMovies(APIURL);
 async function getMovies(url) {
     const resp = await fetch(url);
     const respData = await resp.json();
-
     console.log(respData);
-
     showMovies(respData.results);
 }
 
@@ -25,10 +23,16 @@ function showMovies(movies) {
     main.innerHTML = "";
 
     movies.forEach((movie) => {
-        const { poster_path, title, vote_average, overview } = movie;
+        const {
+            poster_path,
+            title,
+            vote_average,
+            overview
+        } = movie;
 
         const movieEl = document.createElement("div");
         movieEl.classList.add("movie");
+        
 
         movieEl.innerHTML = `
             <img

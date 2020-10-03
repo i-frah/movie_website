@@ -97,9 +97,12 @@ html, body {
     color: #fff;
     font-family: inherit;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 1rem 0.5rem 40px;
 }
 
+.search-icon{
+  position: absolute;
+}
 .search::placeholder {
     color: #7378c5;
 }
@@ -110,18 +113,19 @@ html, body {
 }
 
 main {
+  padding-top: 12rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .movie {
-    background-color: #373b69;
-    border-radius: 3px;
-    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
-    position: relative;
-    margin: 1rem;
-    width: 300px;
+  background-color: #373b69;
+  border-radius: 10px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+  width: 230px;
 }
 
 .movie img {
@@ -189,10 +193,12 @@ main {
 
 /* footer section */
 .link {
-    padding: 50px;
+ 
+    padding: 100px 200px 10px 200px;
   }
   
   .sub-links ul {
+    color: grey;
     list-style: none;
     padding: 0;
     display: grid;
@@ -201,7 +207,7 @@ main {
   }
   
   .sub-links a {
-    color: var(--dark);
+     color: grey;
     text-decoration: none;
   }
   
@@ -209,20 +215,31 @@ main {
     color: var(--dark);
     text-decoration: underline;
   }
-  
+  .logos{
+    color: grey;
+  }
   .logos a{
-    padding: 10px;
+    color: grey;
+    padding-right: 20px;
+    padding-bottom: 20px;
   }
   
-  .logo {
-    color: var(--dark);
+
+  footer p{
+    color: grey;
   }
-  
   
   /* FOOTER */
-  footer {
-    padding: 20px;
-    text-align: center;
-    color: var(--dark);
-    margin: 10px;
+  
+  .service-code {
+    background: 0 0;
+    color: grey;
+    border: solid 1px grey;
+  }
+
+  .sub-service .service-code{
+    margin-bottom: 40px;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: .5em;
   }
