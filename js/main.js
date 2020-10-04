@@ -87,7 +87,7 @@ window.addEventListener('scroll', function () {
   
 
   function scrollWin() {
-    window.scrollTo(0, 850);
+    window.scrollTo(0, 800);
   }
 
 
