@@ -89,3 +89,23 @@ window.addEventListener('scroll', function () {
   function scrollWin() {
     window.scrollTo(0, 850);
   }
+
+
+  const viewport = document.getElementsByClassName('viewport')[0]
+  const video = document.getElementById('video')
+  viewport.addEventListener('mouseover', function () {
+    video.play()
+  }, false);
+  viewport.addEventListener('mouseout', function () {
+    video.pause()
+  }, false);
+
+
+const muteButton = document.getElementById('mute-b');
+muteButton.onclick = function (){
+  if (video.muted === false) {    
+    video.muted = true;
+}else{
+    video.muted = false;
+}
+}

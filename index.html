@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="stylesheet/style.css" />
   <script src="https://kit.fontawesome.com/2fb9dd8901.js" crossorigin="anonymous"></script>
   <script src="js/main.js" defer></script>
+
 </head>
 
 <body>
@@ -32,37 +33,34 @@
       <form id="form">
         <input onclick="scrollWin()" type="text" id="search" placeholder="Titles, genres,people. . . " class="search" />
       </form>
-      <a onclick="window.open(this.href,'_blank');return false;" href="ifrahv.github.io/portfolio_2020/">>Portfolio</a>
+      <a onclick="window.open(this.href,'_blank');return false;" href="ifrahv.github.io/portfolio_2020/">Portfolio</a>
       <a href="#"><i class="icon fas fa-gifts"></i></a>
       <a href="#"><i class="icon fas fa-bell sub-nav-logo"></i></a>
       <a href="#"><i class="icon far fa-user-circle"></i></a>
     </nav>
   </header>
   <!-- video trailer section -->
-  <div class="hero">
-    <img class="image-bg" src="assets/witcher.jpg" alt="image of witcher"><!-- This image is property of Netflix,inc. -->
-    <img class="logo-bg" src="assets/witcher-logo.webp" alt="image of witcher logo" />
-    <!-- This image is property of Netflix,inc. -->
-    <div class="hidden-text">
-      <img class="logo-bg-hidden" src="assets/witcher-logo.webp" alt="image of witcher logo" />
-      <p>
-        Geralt of Rivia, a mutated monster-hunter for hire,
-        journeys toward his destiny in a turbulent world where
-        people often prove more wicked than beasts.
-      </p>
-      <div class="hero-icons">
-        <button class="hero-i"><i class="gap fas fa-play"></i>Play</button>
-        <button class="plus hero-i"><i class="gap fas fa-plus"></i>Watch Later</button>
-        <button class="dot hero-i"><i class="fas fa-ellipsis-h"></i></button>
+    <div class="viewport">
+      <img class="image-bg" src="assets/witcher.jpg" alt="image of witcher"><!-- This image is property of Netflix,inc. -->
+      <img class="logo-vis" src="assets/witcher-logo.webp" alt="image of witcher logo" />  <!-- This image is property of Netflix,inc. -->
+      <div class="hidden-text">
+        <img class="logo-bg-hidden" src="assets/witcher-logo.webp" alt="image of witcher logo" />
+        <p>
+          Geralt of Rivia, a mutated monster-hunter for hire,
+          journeys toward his destiny in a turbulent world where
+          people often prove more wicked than beasts.
+        </p>
+        <div class="hero-icons">
+          <button class="hero-i"><i class="gap fas fa-play"></i>Play</button>
+          <button class="plus hero-i"><i class="gap fas fa-plus"></i>Watch Later</button>
+          <button class="dot hero-i"><i class="fas fa-ellipsis-h"></i></button>
+          <button id="mute-b" class="dot hero-i"><i class="fas fa-volume-mute"></i></button>
+        </div>
       </div>
+      <video id="video" class="fade">
+        <source src="assets/witcher-trailer.mp4" type="video/mp4"> <!-- This trailer is property of Netflix,inc. -->
+      </video>
     </div>
-    <!-- <h1>Waves flung themselves at the blue evening</h1> -->
-    <div class="hero-text">
-    </div>
-    <video class="video-bg" loop>
-      <source src="witcher-trailer.mp4" type="video/mp4"><!-- This trailer is property of Netflix,inc. -->
-    </video>
-  </div>
   <!-- movie grid section -->
   <div class="main-title">
     <h1>Recommended Movies.</h1>
@@ -104,5 +102,6 @@
     </footer>
   </section>
 </body>
+
 
 </html>
